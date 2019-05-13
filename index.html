@@ -7,15 +7,23 @@
 
 <h1>Here is the current date:</h1>
  
-  <p id="date"></p>
-  <p id="clicked"></p>
-  var x = document.getElementById("clicked"); 
-  x = x+1;
-  
-  document.getElementById("clicked").innerHTML = x;
+<p id="date"></p>
+<p id="clicked"></p>
+
   
  <script>
-document.getElementById("demo").innerHTML = Date();
+document.getElementById("date").innerHTML = Date();
+
+let x = 0;
+
+x = x+1;
+//document.getElementById("clicked"))
+if (Number.isInteger(document.getElementById("clicked")) == true) {
+	x = document.getElementById("clicked");
+    
+}
+
+  document.getElementById("clicked").innerHTML = x;
 </script>
 
 <noscript>Sorry, your browser does not support JavaScript!</noscript> 
