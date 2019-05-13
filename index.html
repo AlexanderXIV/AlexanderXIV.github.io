@@ -8,12 +8,17 @@
 <h1>Here is the current date:</h2>
  
   <p id="date"></p>
+  <p id="clicked"></p>
+  var x = document.getElementById("clicked"); 
+  x = x+1;
+  
+  document.getElementById("clicked").innerHTML = x;
   
  <script>
 document.getElementById("demo").innerHTML = Date();
 </script>
 
 <noscript>Sorry, your browser does not support JavaScript!</noscript> 
-
+ <p>Version 1.00</p>
 </body>
 </html>
