@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hey, there :)</title>
-  </head>
-<body>
+	<head>
+    	<title>Hey, there :)</title>
+    </head>
+	
+    <body>
 
-<h1>Here is the current date:</h1>
+		<h1>Here is the current date:</h1>
  
-<p id="date"></p>
-<p id="clicked"></p>
+		<p id="date"></p>
+		<p id="clicked"></p>
 
-  
- <script>
-document.getElementById("date").innerHTML = Date();
+		<script>
+            document.getElementById("date").innerHTML = Date();
+    			setInterval(function(){
+					document.getElementById("date").innerHTML = Date();
+    			}, 1000);
+                
+            var y = 0;
+			if (Number.isInteger(document.getElementById("clicked")) == true) {
+				x = document.getElementById("clicked");
+			}
+            y = y+1;
+  			document.getElementById("clicked").innerHTML = y;
+		</script>
 
-let x = 0;
+		<noscript>Sorry, your browser does not support JavaScript!</noscript> 
 
-x = x+1;
-//document.getElementById("clicked"))
-if (Number.isInteger(document.getElementById("clicked")) == true) {
-	x = document.getElementById("clicked");
-    
-}
-
-  document.getElementById("clicked").innerHTML = x;
-</script>
-
-<noscript>Sorry, your browser does not support JavaScript!</noscript> 
- <p>Version 1.00</p>
-</body>
+		<p>Version 1.00</p>
+	</body>
 </html>
