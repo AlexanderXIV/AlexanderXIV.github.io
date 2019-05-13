@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Hey, there :)</title>
+  </head>
 <body>
 
-<h2>Use JavaScript to Change Text</h2>
-<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+<h1>Here is the current date:</h2>
+  
+ <script>
+document.getElementById("demo").innerHTML = Date();
+</script>
 
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script> 
+<noscript>Sorry, your browser does not support JavaScript!</noscript> 
 
 </body>
 </html>
